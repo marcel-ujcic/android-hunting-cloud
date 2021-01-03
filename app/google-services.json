@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "162097453755",
+    "firebase_url": "https://huntingcloud-d91fd.firebaseio.com",
+    "project_id": "huntingcloud-d91fd",
+    "storage_bucket": "huntingcloud-d91fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162097453755:android:939d015b694ad5ca94679e",
+        "android_client_info": {
+          "package_name": "com.example.hunting_cloud_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162097453755-apq6vp1jmog4pump17ai92me8gph0aql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjxpq-T4n0TuRf0qAWICln6dfHf_Ve6Ac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162097453755-apq6vp1jmog4pump17ai92me8gph0aql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

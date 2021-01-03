@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Hunting_Cloud_App</string>
+    <string-array name="Lokacije">
+        <item>"mesto 1"</item>
+        <item>"mesto 2"</item>
+        <item>"mesto 3"</item>
+        <item>"mesto 4"</item>
+        <item>"mesto 5"</item>
+    </string-array>
+    <string name="srna">srna</string>
+    <string name="od_1_maja_do_31_oktobra">od 1. maja do 31. oktobra</string>
+    <string name="srna_mladi_i_obeh_spolov">- srna, mladiči obeh spolov</string>
+    <string name="od_1_septembra_do_31_decembra">od 1. septembra do 31. decembra</string>
+    <string name="mladica">-mladica</string>
+    <string name="od_16_avgusta_do_31_decembra">od 16. avgusta do 31. decembra</string>
+    <string name="srnjak_lan_ak">- srnjak, lanščak</string>
+    <string name="jelen">- jelen</string>
+    <string name="ko_uta">-košuta</string>
+    <string name="oven_lan_aki_obeh_spolov_in_jagnjeta_obeh_spolov">- oven, lanščaki obeh spolov in jagnjeta obeh spolov</string>
+    <string name="kozel_koza_kozli_i_obeh_spolov_enoletni_obeh_spolov">- kozel, koza, kozliči obeh spolov,<br> enoletni obeh spolov</br></string>
+    <string name="od_1_avgusta_do_31_decembra">od 1. avgusta do 31. decembra</string>
+    <string name="od_1_januarja_do_31_decembra">od 1. januarja do 31. decembra</string>
+</resources>

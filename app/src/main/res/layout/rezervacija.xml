@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#2D6349"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:id="@+id/parent"
+    tools:context=".Rezervacija">
+
+    <ImageView
+        android:id="@+id/slika_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/oblak"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/meni" />
+
+    <TextView
+        android:id="@+id/huntingcloud_glava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="705dp"
+        android:text="HuntingCloud"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="@+id/kvadrat"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/meni"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/kvadrat"
+        android:layout_width="500dp"
+        android:layout_height="800dp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/round_edittext"
+        android:gravity="center"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/slika_logo">
+
+        <TextView
+            android:id="@+id/rezervacija_ime"
+            android:layout_width="208dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="REZERVACIJA"
+            android:textSize="30dp"
+            android:textStyle="normal"
+            android:typeface="sans"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:textColor="#2D6349" />
+
+        <Spinner
+            android:id="@+id/dropdown_menu_preze"
+            android:layout_width="281dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="56dp"
+            android:background="#719383"
+            app:layout_constraintEnd_toEndOf="@+id/rezervacija_ime"
+            app:layout_constraintStart_toStartOf="@+id/rezervacija_ime"
+            app:layout_constraintTop_toTopOf="@+id/rezervacija_ime" />
+
+        <EditText
+            android:id="@+id/ura_enter"
+            android:layout_width="281dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="120dp"
+            android:background="#719383"
+            android:hint="  Ura       hh:mm"
+            android:imeOptions="actionSend"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/rezervacija_ime"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@+id/rezervacija_ime"
+            app:layout_constraintTop_toTopOf="@+id/rezervacija_ime" />
+
+        <EditText
+            android:id="@+id/Opombe"
+            android:layout_width="281dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="164dp"
+            android:background="#719383"
+            android:hint="Opombe"
+            android:imeOptions="actionSend"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/rezervacija_ime"
+            app:layout_constraintHorizontal_bias="0.479"
+            app:layout_constraintStart_toStartOf="@+id/rezervacija_ime"
+            app:layout_constraintTop_toTopOf="@+id/rezervacija_ime" />
+
+        <Button
+            android:id="@+id/bt_rezervacija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="372dp"
+            android:background="@drawable/round_button"
+            android:text="Rezerviraj"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/rezervacija_ime"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/rezervacija_ime"
+            app:layout_constraintTop_toTopOf="@+id/rezervacija_ime" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/Obvestilo"
+        android:layout_width="57dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_baseline_notifications_24"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/meni" />
+
+    <ImageView
+        android:id="@+id/meni"
+        android:layout_width="47dp"
+        android:layout_height="42dp"
+        android:layout_marginRight="80dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/menu"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

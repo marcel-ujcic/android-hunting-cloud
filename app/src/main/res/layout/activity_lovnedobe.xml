@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#2D6349"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:id="@+id/parent"
+    >
+
+
+    <ImageView
+        android:id="@+id/slika_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/oblak"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/meni" />
+
+    <TextView
+        android:id="@+id/huntingcloud_glava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="705dp"
+        android:text="LOVNE DOBE"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="@+id/kvadrat"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/meni"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/kvadrat"
+        android:layout_width="460dp"
+        android:layout_height="800dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/round_edittext"
+        android:gravity="center"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/slika_logo">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/black"
+                android:stretchColumns="2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:showDividers="middle">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:paddingLeft="100dp"
+                        android:text="@string/srna"
+                        android:textStyle="bold" />
+
+                    <TextView/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:text="@string/srnjak_lan_ak" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1 septembra \ndo 31 decembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:text="@string/srna_mladi_i_obeh_spolov" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1 septembra \ndo 31 decembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:text="@string/mladica" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1 maja \ndo 31 oktobra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="navadni jelen"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:text="@string/jelen" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 16 avgusta \ndo 31 decembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:text="@string/ko_uta" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1 septembra \ndo 31 decembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:text="-teleta obeh spolov" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. septembra \ndo 31. januarja" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:text="- junica, lanščak" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. julija \ndo 31. januarja" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="damjak"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:text="- jelen" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 16. avgusta \ndo 31. decembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:text="- košuta" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. septembra \ndo 31. decembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:text="- teleta obeh spolov" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. septembra \ndo 31. januarja" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:text="- junica, lanščak" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. julija \ndo 31. januarja" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="muflon"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_height="40dp"
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:lines="2"
+                        android:text="- oven, lanščaki obeh spolov \nin jagnjeta obeh spolov" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. avgusta \ndo 28. februarja" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:text="- ovca" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. avgusta \ndo 31. decembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="gams"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_height="40dp"
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:lines="2"
+                        android:text="- kozel, koza, kozliči obeh spolov,\nenoletni obeh spolov" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1 avgusta \ndo 31 decembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="kozorog"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_height="40dp"
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:lines="2"
+                        android:text="- kozel, koza, kozliči obeh spolov,\nenoletni obeh spolov" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1 avgusta \ndo 31 decembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="divji prašič"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:text="- merjasec" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1 januarja \ndo 31 decembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:text="- svinja" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. julija \ndo 31. januarja" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:text="- ozimci in lanščaki obeh spolov" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. januarja \ndo 31. decembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="poljski zajec"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. oktobra \ndo 15. decembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="kuna belica, kuna zlatica"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. novembra \ndo 28. februarja" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="jazbec"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. avgusta \ndo 31. decembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="lisica"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. julija \ndo 15. marca" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="rakunasti pes"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. avgusta \ndo 31. marca" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="šakal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. julija \ndo 15. marca" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="navadni polh"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. oktobra \ndo 30. novembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="alpski svizec"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. septembra \ndo 30. oktobra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="pižmovka"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. januarja \ndo 31. decembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="nutrija"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. januarja \ndo 31. decembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="fazan"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. septembra \ndo 28. februarja" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="poljska jerebica (gojena)"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. septembra \ndo 15. novembra" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="raca mlakarica"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. septembra \ndo 15. januarja" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="šoja"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. avgusta \ndo 28. februarja" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="sraka"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. avgusta \ndo 28. februarja" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="70dp"
+                        android:text="siva vrana"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="od 1. avgusta \ndo 28. februarja" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+            </TableLayout>
+        </ScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/Obvestilo"
+        android:layout_width="57dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_baseline_notifications_24"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/meni" />
+
+    <ImageButton
+        android:id="@+id/meni"
+        android:layout_width="45dp"
+        android:layout_height="64dp"
+        android:layout_marginRight="80dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/menu"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
